@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <game-header></game-header>
-    <router-view></router-view>
+    <vue-page-transition name="fade-in-up">
+      <router-view/>
+    </vue-page-transition>
     <game-footer></game-footer>
   </div>
 </template>
